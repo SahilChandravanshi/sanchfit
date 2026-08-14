@@ -1,136 +1,160 @@
-import { NavLink, Outlet } from 'react-router-dom'
-import {
-  BarChart3,
-  Dumbbell,
-  Home,
-  Plus,
-  UserRound,
-} from 'lucide-react'
+import { BarChart3, Dumbbell, Home, UserRound } from "lucide-react";
+import { NavLink, Outlet } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const navigation = [
-  {
-    label: 'Home',
-    path: '/',
-    icon: Home,
-  },
-  {
-    label: 'Workouts',
-    path: '/workouts',
-    icon: Dumbbell,
-  },
-  {
-    label: 'Progress',
-    path: '/progress',
-    icon: BarChart3,
-  },
-]
+	{
+		label: "Home",
+		to: "/",
+		icon: Home,
+	},
+	{
+		label: "Workouts",
+		to: "/workouts",
+		icon: Dumbbell,
+	},
+	{
+		label: "Progress",
+		to: "/progress",
+		icon: BarChart3,
+	},
+	{
+		label: "Profile",
+		to: "/profile",
+		icon: UserRound,
+	},
+];
 
-function AppShell() {
-  return (
-    <div className="app-shell">
-      <aside className="desktop-sidebar">
-        <div className="sidebar-brand">
-          <span className="brand-mark">S</span>
-          <span>SanchFit</span>
-        </div>
+export default function AppShell() {
+	return (
+		<div className="app-shell">
+			{/* ==================================================
+          DESKTOP SIDEBAR
+      ================================================== */}
 
-        <nav className="sidebar-nav" aria-label="Main navigation">
-          {navigation.map(({ label, path, icon: Icon }) => (
-            <NavLink
-              key={path}
-              to={path}
-              end={path === '/'}
-              className={({ isActive }) =>
-                `nav-item ${isActive ? 'active' : ''}`
-              }
-            >
-              <Icon size={20} strokeWidth={1.8} />
-              <span>{label}</span>
-            </NavLink>
-          ))}
-        </nav>
+			<aside className="desktop-sidebar">
+				<div className="sidebar-brand">
+					<div className="brand-mark">S</div>
+					<span>SanchFit</span>
+				</div>
 
-        <NavLink to="/profile" className="sidebar-profile">
-          <span className="avatar">S</span>
+				<nav className="sidebar-nav">
+					{navigation.map(({ label, to, icon: Icon }) => (
+						<NavLink
+							key={to}
+							to={to}
+							end={to === "/"}
+							className={({ isActive }) =>
+								`nav-item ${isActive ? "active" : ""}`
+							}
+						>
+							{({ isActive }) => (
+								<>
+									{isActive && (
+										<motion.div
+											layoutId="sanchfit-desktop-active-pill"
+											className="desktop-nav-pill"
+											transition={{
+												type: "spring",
+												stiffness: 420,
+												damping: 30,
+												mass: 0.8,
+											}}
+										/>
+									)}
 
-          <span className="sidebar-profile-info">
-            <strong>Your profile</strong>
-            <small>Settings & data</small>
-          </span>
+									<Icon />
+									<span>{label}</span>
+								</>
+							)}
+						</NavLink>
+					))}
+				</nav>
 
-          <UserRound size={18} strokeWidth={1.8} />
-        </NavLink>
-      </aside>
+				<div className="sidebar-profile">
+					<div className="avatar">S</div>
 
-      <div className="app-content">
-        <header className="mobile-header">
-          <div className="brand">
-            <span className="brand-mark">S</span>
-            <span className="brand-name">SanchFit</span>
-          </div>
+					<div className="sidebar-profile-info">
+						<strong>SanchFit</strong>
+						<small>Your fitness companion</small>
+					</div>
+				</div>
+			</aside>
 
-          <NavLink
-            to="/profile"
-            className="mobile-avatar"
-            aria-label="Open profile"
-          >
-            S
-          </NavLink>
-        </header>
+			{/* ==================================================
+          MAIN CONTENT
+      ================================================== */}
 
-        <main className="page-content">
-          <Outlet />
-        </main>
+			<div className="app-content">
+				{/* MOBILE HEADER */}
 
-        <nav className="mobile-nav" aria-label="Mobile navigation">
-          <NavLink
-            to="/"
-            end
-            className={({ isActive }) =>
-              `mobile-nav-item ${isActive ? 'active' : ''}`
-            }
-          >
-            <Home size={21} strokeWidth={1.8} />
-            <span>Home</span>
-          </NavLink>
+				<header className="mobile-header">
+					<div className="brand">
+						<div className="brand-mark">S</div>
 
-          <NavLink
-            to="/workouts"
-            className={({ isActive }) =>
-              `mobile-nav-item ${isActive ? 'active' : ''}`
-            }
-          >
-            <Dumbbell size={21} strokeWidth={1.8} />
-            <span>Workouts</span>
-          </NavLink>
+						<span className="brand-name">SanchFit</span>
+					</div>
 
-          <button className="quick-add-button" aria-label="Quick add">
-            <Plus size={25} strokeWidth={2} />
-          </button>
+					<div className="mobile-avatar">S</div>
+				</header>
 
-          <NavLink
-            to="/progress"
-            className={({ isActive }) =>
-              `mobile-nav-item ${isActive ? 'active' : ''}`
-            }
-          >
-            <BarChart3 size={21} strokeWidth={1.8} />
-            <span>Progress</span>
-          </NavLink>
+				{/* PAGE CONTENT */}
 
-          <NavLink
-            to="/profile"
-            className={({ isActive }) =>
-              `mobile-nav-item ${isActive ? 'active' : ''}`
-            }
-          >
-            <UserRound size={21} strokeWidth={1.8} />
-            <span>Profile</span>
-          </NavLink>
-        </nav>
-      </div>
-    </div>
-  )
+				<main className="page-content">
+					<Outlet />
+				</main>
+
+				{/* ==================================================
+            MOBILE NAVIGATION
+        ================================================== */}
+
+				<nav className="mobile-nav">
+					{navigation.map(({ label, to, icon: Icon }) => (
+						<NavLink
+							key={to}
+							to={to}
+							end={to === "/"}
+							className={({ isActive }) =>
+								`mobile-nav-item ${isActive ? "active" : ""}`
+							}
+						>
+							{({ isActive }) => (
+								<>
+									{isActive && (
+										<motion.div
+											layoutId="sanchfit-active-nav-pill"
+											className="mobile-nav-pill"
+											transition={{
+												type: "spring",
+												stiffness: 420,
+												damping: 30,
+												mass: 0.8,
+											}}
+										/>
+									)}
+
+									<Icon />
+
+									<motion.span
+										initial={false}
+										animate={{
+											maxWidth: isActive ? 75 : 0,
+											opacity: isActive ? 1 : 0,
+											x: isActive ? 0 : -5,
+										}}
+										transition={{
+											duration: 0.22,
+											ease: [0.22, 1, 0.36, 1],
+										}}
+									>
+										{label}
+									</motion.span>
+								</>
+							)}
+						</NavLink>
+					))}
+				</nav>
+			</div>
+		</div>
+	);
 }
-
-export default AppShell
