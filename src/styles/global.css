@@ -2328,3 +2328,959 @@ img {
 		height: 28px;
 	}
 }
+
+/* =========================================================
+   SANCHFIT — MINIMAL FITNESS THEME
+   Reference: warm off-white / charcoal / restrained coral
+   ========================================================= */
+
+:root {
+  --sanch-bg: #f5f3ef;
+  --sanch-surface: #faf9f6;
+  --sanch-surface-2: #f0eee9;
+  --sanch-border: #dedbd4;
+
+  --sanch-text: #20201f;
+  --sanch-text-soft: #6f6d68;
+  --sanch-text-muted: #97948d;
+
+  --sanch-black: #20201f;
+  --sanch-black-hover: #343330;
+
+  --sanch-accent: #df725f;
+  --sanch-accent-soft: #f3ddd7;
+
+  --sanch-success: #657c6b;
+
+  --sanch-radius: 18px;
+  --sanch-radius-small: 12px;
+}
+
+/* ---------- GLOBAL ---------- */
+
+body {
+  background: var(--sanch-bg) !important;
+  color: var(--sanch-text) !important;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+/* ---------- MAIN SURFACES ---------- */
+
+.app-shell,
+.app-content,
+main {
+  background: var(--sanch-bg) !important;
+}
+
+/* Remove the old colorful background treatment */
+.app-shell::before,
+.app-shell::after,
+.app-content::before,
+.app-content::after {
+  background: none !important;
+}
+
+/* ---------- BRAND ---------- */
+
+.brand,
+.logo,
+.brand-name,
+.sanchfit-title {
+  color: var(--sanch-black) !important;
+}
+
+.logo-mark,
+.brand-mark {
+  background: var(--sanch-black) !important;
+  color: #fff !important;
+}
+
+/* ---------- HEADINGS ---------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--sanch-text) !important;
+}
+
+p {
+  color: var(--sanch-text-soft);
+}
+
+.eyebrow {
+  color: var(--sanch-text-muted) !important;
+}
+
+/* ---------- CARDS ---------- */
+
+.card,
+.stat-card,
+.workout-stat-card,
+.empty-workout-card,
+.workout-history-card,
+.exercise-card,
+.progress-card,
+.dashboard-card {
+  background: var(--sanch-surface) !important;
+  border-color: var(--sanch-border) !important;
+  box-shadow: 0 4px 18px rgba(32, 32, 31, 0.045) !important;
+}
+
+/* Remove colorful glass effects */
+.card::before,
+.card::after,
+.stat-card::before,
+.stat-card::after,
+.exercise-card::before,
+.exercise-card::after {
+  background: none !important;
+}
+
+/* ---------- WORKOUT CARDS ---------- */
+
+.exercise-card {
+  border-radius: var(--sanch-radius) !important;
+}
+
+.workout-stat-card {
+  border-radius: var(--sanch-radius) !important;
+}
+
+.workout-stat-card strong {
+  color: var(--sanch-text) !important;
+}
+
+.workout-stat-card span {
+  color: var(--sanch-text-soft) !important;
+}
+
+/* ---------- PRIMARY BUTTONS ---------- */
+
+.primary-action {
+  background: var(--sanch-black) !important;
+  color: #ffffff !important;
+  border: 1px solid var(--sanch-black) !important;
+  box-shadow: none !important;
+}
+
+.primary-action:hover {
+  background: var(--sanch-black-hover) !important;
+  transform: translateY(-1px);
+}
+
+.primary-action:active {
+  transform: translateY(0);
+}
+
+/* ---------- SECONDARY BUTTONS ---------- */
+
+.secondary-action {
+  background: var(--sanch-surface) !important;
+  color: var(--sanch-text) !important;
+  border: 1px solid var(--sanch-border) !important;
+  box-shadow: none !important;
+}
+
+.secondary-action:hover {
+  background: var(--sanch-surface-2) !important;
+  border-color: #cbc8c1 !important;
+}
+
+/* ---------- TEXT ACTIONS ---------- */
+
+.text-action {
+  color: var(--sanch-text) !important;
+}
+
+.text-action:hover {
+  color: var(--sanch-accent) !important;
+}
+
+/* ---------- EXERCISE HEADER ---------- */
+
+.exercise-card-header {
+  border-color: var(--sanch-border) !important;
+}
+
+.exercise-number {
+  background: var(--sanch-surface-2) !important;
+  color: var(--sanch-text-soft) !important;
+}
+
+.exercise-heading strong {
+  color: var(--sanch-text) !important;
+}
+
+.exercise-heading small {
+  color: var(--sanch-text-muted) !important;
+}
+
+/* ---------- ICON BUTTONS ---------- */
+
+.icon-button {
+  color: var(--sanch-text-soft) !important;
+  background: transparent !important;
+}
+
+.icon-button:hover {
+  background: var(--sanch-surface-2) !important;
+  color: var(--sanch-text) !important;
+}
+
+.icon-button.danger:hover {
+  color: var(--sanch-accent) !important;
+}
+
+/* ---------- INPUTS ---------- */
+
+input,
+select,
+textarea {
+  background: var(--sanch-surface) !important;
+  color: var(--sanch-text) !important;
+  border-color: var(--sanch-border) !important;
+}
+
+input::placeholder {
+  color: var(--sanch-text-muted) !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--sanch-text) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(32, 32, 31, 0.06) !important;
+}
+
+/* ---------- WORKOUT META ---------- */
+
+.workout-meta {
+  color: var(--sanch-text-soft) !important;
+}
+
+.workout-meta select {
+  background: var(--sanch-surface) !important;
+}
+
+/* ---------- SET TABLE ---------- */
+
+.set-table-header {
+  color: var(--sanch-text-muted) !important;
+  border-color: var(--sanch-border) !important;
+}
+
+.set-row {
+  border-color: var(--sanch-border) !important;
+}
+
+.set-number {
+  color: var(--sanch-text-soft) !important;
+}
+
+.set-row select,
+.set-row input {
+  background: var(--sanch-surface-2) !important;
+  border-color: transparent !important;
+}
+
+.set-row.completed {
+  background: rgba(101, 124, 107, 0.055) !important;
+}
+
+/* ---------- COMPLETED SET ---------- */
+
+.set-row.completed input,
+.set-row.completed select {
+  border-color: rgba(101, 124, 107, 0.18) !important;
+}
+
+.set-row.completed .check-button,
+.set-row.completed button {
+  color: var(--sanch-success) !important;
+}
+
+/* ---------- ADD SET / ADD EXERCISE ---------- */
+
+.add-set-button,
+.add-exercise-button {
+  color: var(--sanch-text) !important;
+}
+
+.add-set-button:hover,
+.add-exercise-button:hover {
+  color: var(--sanch-accent) !important;
+}
+
+/* ---------- EMPTY STATES ---------- */
+
+.empty-workout-icon {
+  background: var(--sanch-surface-2) !important;
+  color: var(--sanch-text) !important;
+}
+
+.empty-workout-card h3 {
+  color: var(--sanch-text) !important;
+}
+
+.empty-workout-card p {
+  color: var(--sanch-text-soft) !important;
+}
+
+/* ---------- ACTIVE WORKOUT HEADER ---------- */
+
+.workout-title-input {
+  color: var(--sanch-text) !important;
+  background: transparent !important;
+  border-color: transparent !important;
+}
+
+.workout-title-input:focus {
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+/* ---------- HISTORY ---------- */
+
+.workout-history-card {
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.workout-history-card:hover {
+  transform: translateY(-2px);
+  border-color: #cbc8c1 !important;
+  box-shadow: 0 7px 22px rgba(32, 32, 31, 0.07) !important;
+}
+
+.workout-history-card strong {
+  color: var(--sanch-text) !important;
+}
+
+.workout-history-card span {
+  color: var(--sanch-text-soft) !important;
+}
+
+/* ---------- MOBILE / DESKTOP NAV ---------- */
+
+.bottom-nav,
+.mobile-nav,
+.desktop-nav {
+  background: rgba(250, 249, 246, 0.96) !important;
+  border-color: var(--sanch-border) !important;
+  box-shadow: 0 8px 28px rgba(32, 32, 31, 0.08) !important;
+}
+
+.bottom-nav a,
+.mobile-nav a,
+.desktop-nav a {
+  color: var(--sanch-text-muted) !important;
+}
+
+.bottom-nav a:hover,
+.mobile-nav a:hover,
+.desktop-nav a:hover {
+  color: var(--sanch-text) !important;
+}
+
+/* Selected navigation pill */
+.bottom-nav a.active,
+.mobile-nav a.active,
+.desktop-nav a.active,
+.bottom-nav .active,
+.mobile-nav .active,
+.desktop-nav .active {
+  background: var(--sanch-black) !important;
+  color: #ffffff !important;
+  border-color: var(--sanch-black) !important;
+  box-shadow: none !important;
+}
+
+/* Keep animated Framer Motion pill charcoal */
+.nav-pill,
+.active-pill,
+.nav-indicator {
+  background: var(--sanch-black) !important;
+}
+
+/* ---------- ACCENT ---------- */
+
+.accent,
+.accent-text {
+  color: var(--sanch-accent) !important;
+}
+
+.accent-bg {
+  background: var(--sanch-accent) !important;
+}
+
+/* ---------- REMOVE OLD COLORFUL GRADIENTS ---------- */
+
+.gradient,
+.gradient-bg,
+.glass,
+.glass-card {
+  background-image: none !important;
+}
+
+/* Keep surfaces extremely subtle instead of colorful */
+.glass,
+.glass-card {
+  background: var(--sanch-surface) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* ---------- SCROLLBAR ---------- */
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c9c6bf;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa69e;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  body {
+    background: var(--sanch-bg) !important;
+  }
+
+  .workouts-page,
+  .active-workout-page {
+    background: var(--sanch-bg) !important;
+  }
+
+  .workout-stat-card,
+  .empty-workout-card,
+  .exercise-card {
+    box-shadow: 0 3px 14px rgba(32, 32, 31, 0.04) !important;
+  }
+
+  .bottom-nav,
+  .mobile-nav {
+    background: rgba(250, 249, 246, 0.97) !important;
+  }
+}
+
+/* =========================================================
+   SANCHFIT — REFERENCE DASHBOARD
+   Minimal / warm / monochrome fitness UI
+   ========================================================= */
+
+.dashboard-reference {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  padding-bottom: 110px;
+}
+
+/* =========================================================
+   TOP
+   ========================================================= */
+
+.dashboard-reference .dashboard-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.dashboard-reference .dashboard-top h1 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 750;
+  letter-spacing: -0.04em;
+}
+
+.dashboard-icon-button {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--sanch-border);
+  border-radius: 50%;
+  background: var(--sanch-surface);
+  color: var(--sanch-text);
+  cursor: pointer;
+}
+
+.dashboard-icon-button span {
+  font-size: 17px;
+}
+
+/* =========================================================
+   CALENDAR
+   ========================================================= */
+
+.dashboard-calendar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.calendar-days {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-day {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.calendar-day span {
+  font-size: 8px;
+  line-height: 1;
+  color: var(--sanch-text-muted);
+  text-transform: uppercase;
+}
+
+.calendar-day strong {
+  width: 31px;
+  height: 31px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #e9e7e2;
+  color: var(--sanch-text);
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.calendar-day.active strong {
+  background: var(--sanch-black);
+  color: #fff;
+}
+
+.calendar-arrow {
+  width: 25px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: var(--sanch-text-muted);
+  cursor: pointer;
+}
+
+/* =========================================================
+   BODYWEIGHT
+   ========================================================= */
+
+.bodyweight-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 1.1fr);
+  gap: 24px;
+  padding: 2px 2px 25px;
+  border-bottom: 1px solid var(--sanch-border);
+  margin-bottom: 16px;
+}
+
+.dashboard-label {
+  margin: 0 0 8px;
+  color: var(--sanch-text-muted);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.bodyweight-value {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.bodyweight-value strong {
+  font-size: 35px;
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+
+.bodyweight-value span {
+  font-size: 12px;
+  color: var(--sanch-text-soft);
+}
+
+.bodyweight-change {
+  margin: 9px 0 0;
+  font-size: 10px;
+  color: var(--sanch-text-soft);
+}
+
+.bodyweight-change strong {
+  color: var(--sanch-accent);
+}
+
+/* =========================================================
+   BODYWEIGHT CHART
+   ========================================================= */
+
+.weight-chart {
+  min-width: 0;
+  height: 92px;
+  display: grid;
+  grid-template-rows: 1fr 14px;
+  align-self: end;
+}
+
+.chart-bars {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: end;
+  gap: 8px;
+  min-height: 0;
+}
+
+.chart-bar {
+  width: 8px;
+  min-height: 22px;
+  justify-self: center;
+  border-radius: 5px 5px 2px 2px;
+  background: #e5e2dc;
+}
+
+.chart-bar.current {
+  background: var(--sanch-accent);
+}
+
+.chart-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: end;
+  text-align: center;
+}
+
+.chart-days span {
+  font-size: 7px;
+  line-height: 1;
+  color: var(--sanch-text-muted);
+}
+
+/* =========================================================
+   NUTRITION
+   ========================================================= */
+
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: minmax(170px, 0.8fr) minmax(0, 1.2fr);
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.nutrition-card {
+  min-height: 180px;
+  padding: 16px;
+  border: 1px solid var(--sanch-border);
+  border-radius: 16px;
+  background: var(--sanch-surface);
+}
+
+.calories-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.calorie-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.calorie-ring {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  border: 9px solid #e4e2de;
+  border-radius: 50%;
+}
+
+.calorie-ring div {
+  display: grid;
+  place-items: center;
+}
+
+.calorie-ring strong {
+  font-size: 13px;
+}
+
+.calorie-total {
+  margin: 12px 0 0;
+  color: var(--sanch-accent);
+  font-size: 12px;
+}
+
+.calorie-total strong {
+  font-weight: 700;
+}
+
+.calorie-total span {
+  color: var(--sanch-text-soft);
+}
+
+.calorie-unit {
+  margin-top: 1px;
+  color: var(--sanch-text-soft);
+  font-size: 9px;
+}
+
+/* =========================================================
+   MACROS
+   ========================================================= */
+
+.macro-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.macro-row {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.macro-row > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.macro-row span {
+  color: var(--sanch-text-muted);
+  font-size: 8px;
+  letter-spacing: 0.1em;
+}
+
+.macro-row strong {
+  color: var(--sanch-text-soft);
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.macro-line {
+  height: 1px;
+  width: 100%;
+  background: var(--sanch-border);
+}
+
+.macro-line span {
+  display: block;
+  width: 0;
+  height: 1px;
+  background: var(--sanch-accent);
+}
+
+/* =========================================================
+   ACTION CARDS
+   ========================================================= */
+
+.dashboard-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.dashboard-action-card {
+  min-height: 130px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--sanch-border);
+  border-radius: 16px;
+  background: var(--sanch-surface);
+}
+
+.dashboard-action-card h2 {
+  margin: 0 0 3px;
+  font-size: 14px;
+  letter-spacing: -0.025em;
+}
+
+.dashboard-action-card p {
+  margin: 0;
+  font-size: 9px;
+  color: var(--sanch-text-soft);
+}
+
+.dashboard-black-button {
+  width: fit-content;
+  min-width: 76px;
+  height: 32px;
+  padding: 0 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--sanch-black);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 650;
+  cursor: pointer;
+  transition:
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.dashboard-black-button:hover {
+  background: var(--sanch-black-hover);
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   MINI SUMMARY
+   ========================================================= */
+
+.dashboard-mini-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) auto;
+  gap: 8px;
+  padding-top: 2px;
+}
+
+.dashboard-mini-summary > div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.dashboard-mini-summary svg {
+  color: var(--sanch-text-muted);
+  flex-shrink: 0;
+}
+
+.dashboard-mini-summary span {
+  font-size: 8px;
+  color: var(--sanch-text-muted);
+}
+
+.dashboard-mini-summary strong {
+  font-size: 9px;
+  color: var(--sanch-text);
+}
+
+.dashboard-settings-button {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--sanch-border);
+  border-radius: 50%;
+  background: var(--sanch-surface);
+  color: var(--sanch-text);
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .dashboard-reference {
+    padding: 2px 18px 105px;
+  }
+
+  .dashboard-reference .dashboard-top h1 {
+    font-size: 24px;
+  }
+
+  .bodyweight-section {
+    grid-template-columns: minmax(105px, 0.82fr) minmax(175px, 1.18fr);
+    align-items: end;
+    gap: 12px;
+  }
+
+  .weight-chart {
+    height: 82px;
+    min-height: 0;
+  }
+
+  .nutrition-grid {
+    grid-template-columns: 0.85fr 1.15fr;
+  }
+
+  .nutrition-card {
+    min-height: 170px;
+    padding: 13px;
+  }
+
+  .dashboard-action-card {
+    min-height: 120px;
+    padding: 14px;
+  }
+
+  .dashboard-mini-summary {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dashboard-settings-button {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .dashboard-reference {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .calendar-day strong {
+    width: 29px;
+    height: 29px;
+  }
+
+  .nutrition-card {
+    min-height: 160px;
+  }
+
+  .macro-row strong {
+    font-size: 8px;
+  }
+
+  .dashboard-action-card h2 {
+    font-size: 13px;
+  }
+}
