@@ -2175,6 +2175,7 @@ img {
 		max-width: none;
 		text-align: left;
 	}
+	
 }
 
 /* =========================================================
@@ -2335,43 +2336,43 @@ img {
    ========================================================= */
 
 :root {
-  --sanch-bg: #f5f3ef;
-  --sanch-surface: #faf9f6;
-  --sanch-surface-2: #f0eee9;
-  --sanch-border: #dedbd4;
+	--sanch-bg: #f5f3ef;
+	--sanch-surface: #faf9f6;
+	--sanch-surface-2: #f0eee9;
+	--sanch-border: #dedbd4;
 
-  --sanch-text: #20201f;
-  --sanch-text-soft: #6f6d68;
-  --sanch-text-muted: #97948d;
+	--sanch-text: #20201f;
+	--sanch-text-soft: #6f6d68;
+	--sanch-text-muted: #97948d;
 
-  --sanch-black: #20201f;
-  --sanch-black-hover: #343330;
+	--sanch-black: #20201f;
+	--sanch-black-hover: #343330;
 
-  --sanch-accent: #df725f;
-  --sanch-accent-soft: #f3ddd7;
+	--sanch-accent: #df725f;
+	--sanch-accent-soft: #f3ddd7;
 
-  --sanch-success: #657c6b;
+	--sanch-success: #657c6b;
 
-  --sanch-radius: 18px;
-  --sanch-radius-small: 12px;
+	--sanch-radius: 18px;
+	--sanch-radius-small: 12px;
 }
 
 /* ---------- GLOBAL ---------- */
 
 body {
-  background: var(--sanch-bg) !important;
-  color: var(--sanch-text) !important;
+	background: var(--sanch-bg) !important;
+	color: var(--sanch-text) !important;
 }
 
 button,
 input,
 select,
 textarea {
-  font-family: inherit;
+	font-family: inherit;
 }
 
 button {
-  color: inherit;
+	color: inherit;
 }
 
 /* ---------- MAIN SURFACES ---------- */
@@ -2379,7 +2380,7 @@ button {
 .app-shell,
 .app-content,
 main {
-  background: var(--sanch-bg) !important;
+	background: var(--sanch-bg) !important;
 }
 
 /* Remove the old colorful background treatment */
@@ -2387,7 +2388,7 @@ main {
 .app-shell::after,
 .app-content::before,
 .app-content::after {
-  background: none !important;
+	background: none !important;
 }
 
 /* ---------- BRAND ---------- */
@@ -2396,13 +2397,13 @@ main {
 .logo,
 .brand-name,
 .sanchfit-title {
-  color: var(--sanch-black) !important;
+	color: var(--sanch-black) !important;
 }
 
 .logo-mark,
 .brand-mark {
-  background: var(--sanch-black) !important;
-  color: #fff !important;
+	background: var(--sanch-black) !important;
+	color: #fff !important;
 }
 
 /* ---------- HEADINGS ---------- */
@@ -2413,15 +2414,15 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--sanch-text) !important;
+	color: var(--sanch-text) !important;
 }
 
 p {
-  color: var(--sanch-text-soft);
+	color: var(--sanch-text-soft);
 }
 
 .eyebrow {
-  color: var(--sanch-text-muted) !important;
+	color: var(--sanch-text-muted) !important;
 }
 
 /* ---------- CARDS ---------- */
@@ -2434,9 +2435,9 @@ p {
 .exercise-card,
 .progress-card,
 .dashboard-card {
-  background: var(--sanch-surface) !important;
-  border-color: var(--sanch-border) !important;
-  box-shadow: 0 4px 18px rgba(32, 32, 31, 0.045) !important;
+	background: var(--sanch-surface) !important;
+	border-color: var(--sanch-border) !important;
+	box-shadow: 0 4px 18px rgba(32, 32, 31, 0.045) !important;
 }
 
 /* Remove colorful glass effects */
@@ -2446,102 +2447,102 @@ p {
 .stat-card::after,
 .exercise-card::before,
 .exercise-card::after {
-  background: none !important;
+	background: none !important;
 }
 
 /* ---------- WORKOUT CARDS ---------- */
 
 .exercise-card {
-  border-radius: var(--sanch-radius) !important;
+	border-radius: var(--sanch-radius) !important;
 }
 
 .workout-stat-card {
-  border-radius: var(--sanch-radius) !important;
+	border-radius: var(--sanch-radius) !important;
 }
 
 .workout-stat-card strong {
-  color: var(--sanch-text) !important;
+	color: var(--sanch-text) !important;
 }
 
 .workout-stat-card span {
-  color: var(--sanch-text-soft) !important;
+	color: var(--sanch-text-soft) !important;
 }
 
 /* ---------- PRIMARY BUTTONS ---------- */
 
 .primary-action {
-  background: var(--sanch-black) !important;
-  color: #ffffff !important;
-  border: 1px solid var(--sanch-black) !important;
-  box-shadow: none !important;
+	background: var(--sanch-black) !important;
+	color: #ffffff !important;
+	border: 1px solid var(--sanch-black) !important;
+	box-shadow: none !important;
 }
 
 .primary-action:hover {
-  background: var(--sanch-black-hover) !important;
-  transform: translateY(-1px);
+	background: var(--sanch-black-hover) !important;
+	transform: translateY(-1px);
 }
 
 .primary-action:active {
-  transform: translateY(0);
+	transform: translateY(0);
 }
 
 /* ---------- SECONDARY BUTTONS ---------- */
 
 .secondary-action {
-  background: var(--sanch-surface) !important;
-  color: var(--sanch-text) !important;
-  border: 1px solid var(--sanch-border) !important;
-  box-shadow: none !important;
+	background: var(--sanch-surface) !important;
+	color: var(--sanch-text) !important;
+	border: 1px solid var(--sanch-border) !important;
+	box-shadow: none !important;
 }
 
 .secondary-action:hover {
-  background: var(--sanch-surface-2) !important;
-  border-color: #cbc8c1 !important;
+	background: var(--sanch-surface-2) !important;
+	border-color: #cbc8c1 !important;
 }
 
 /* ---------- TEXT ACTIONS ---------- */
 
 .text-action {
-  color: var(--sanch-text) !important;
+	color: var(--sanch-text) !important;
 }
 
 .text-action:hover {
-  color: var(--sanch-accent) !important;
+	color: var(--sanch-accent) !important;
 }
 
 /* ---------- EXERCISE HEADER ---------- */
 
 .exercise-card-header {
-  border-color: var(--sanch-border) !important;
+	border-color: var(--sanch-border) !important;
 }
 
 .exercise-number {
-  background: var(--sanch-surface-2) !important;
-  color: var(--sanch-text-soft) !important;
+	background: var(--sanch-surface-2) !important;
+	color: var(--sanch-text-soft) !important;
 }
 
 .exercise-heading strong {
-  color: var(--sanch-text) !important;
+	color: var(--sanch-text) !important;
 }
 
 .exercise-heading small {
-  color: var(--sanch-text-muted) !important;
+	color: var(--sanch-text-muted) !important;
 }
 
 /* ---------- ICON BUTTONS ---------- */
 
 .icon-button {
-  color: var(--sanch-text-soft) !important;
-  background: transparent !important;
+	color: var(--sanch-text-soft) !important;
+	background: transparent !important;
 }
 
 .icon-button:hover {
-  background: var(--sanch-surface-2) !important;
-  color: var(--sanch-text) !important;
+	background: var(--sanch-surface-2) !important;
+	color: var(--sanch-text) !important;
 }
 
 .icon-button.danger:hover {
-  color: var(--sanch-accent) !important;
+	color: var(--sanch-accent) !important;
 }
 
 /* ---------- INPUTS ---------- */
@@ -2549,131 +2550,131 @@ p {
 input,
 select,
 textarea {
-  background: var(--sanch-surface) !important;
-  color: var(--sanch-text) !important;
-  border-color: var(--sanch-border) !important;
+	background: var(--sanch-surface) !important;
+	color: var(--sanch-text) !important;
+	border-color: var(--sanch-border) !important;
 }
 
 input::placeholder {
-  color: var(--sanch-text-muted) !important;
+	color: var(--sanch-text-muted) !important;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: var(--sanch-text) !important;
-  outline: none !important;
-  box-shadow: 0 0 0 2px rgba(32, 32, 31, 0.06) !important;
+	border-color: var(--sanch-text) !important;
+	outline: none !important;
+	box-shadow: 0 0 0 2px rgba(32, 32, 31, 0.06) !important;
 }
 
 /* ---------- WORKOUT META ---------- */
 
 .workout-meta {
-  color: var(--sanch-text-soft) !important;
+	color: var(--sanch-text-soft) !important;
 }
 
 .workout-meta select {
-  background: var(--sanch-surface) !important;
+	background: var(--sanch-surface) !important;
 }
 
 /* ---------- SET TABLE ---------- */
 
 .set-table-header {
-  color: var(--sanch-text-muted) !important;
-  border-color: var(--sanch-border) !important;
+	color: var(--sanch-text-muted) !important;
+	border-color: var(--sanch-border) !important;
 }
 
 .set-row {
-  border-color: var(--sanch-border) !important;
+	border-color: var(--sanch-border) !important;
 }
 
 .set-number {
-  color: var(--sanch-text-soft) !important;
+	color: var(--sanch-text-soft) !important;
 }
 
 .set-row select,
 .set-row input {
-  background: var(--sanch-surface-2) !important;
-  border-color: transparent !important;
+	background: var(--sanch-surface-2) !important;
+	border-color: transparent !important;
 }
 
 .set-row.completed {
-  background: rgba(101, 124, 107, 0.055) !important;
+	background: rgba(101, 124, 107, 0.055) !important;
 }
 
 /* ---------- COMPLETED SET ---------- */
 
 .set-row.completed input,
 .set-row.completed select {
-  border-color: rgba(101, 124, 107, 0.18) !important;
+	border-color: rgba(101, 124, 107, 0.18) !important;
 }
 
 .set-row.completed .check-button,
 .set-row.completed button {
-  color: var(--sanch-success) !important;
+	color: var(--sanch-success) !important;
 }
 
 /* ---------- ADD SET / ADD EXERCISE ---------- */
 
 .add-set-button,
 .add-exercise-button {
-  color: var(--sanch-text) !important;
+	color: var(--sanch-text) !important;
 }
 
 .add-set-button:hover,
 .add-exercise-button:hover {
-  color: var(--sanch-accent) !important;
+	color: var(--sanch-accent) !important;
 }
 
 /* ---------- EMPTY STATES ---------- */
 
 .empty-workout-icon {
-  background: var(--sanch-surface-2) !important;
-  color: var(--sanch-text) !important;
+	background: var(--sanch-surface-2) !important;
+	color: var(--sanch-text) !important;
 }
 
 .empty-workout-card h3 {
-  color: var(--sanch-text) !important;
+	color: var(--sanch-text) !important;
 }
 
 .empty-workout-card p {
-  color: var(--sanch-text-soft) !important;
+	color: var(--sanch-text-soft) !important;
 }
 
 /* ---------- ACTIVE WORKOUT HEADER ---------- */
 
 .workout-title-input {
-  color: var(--sanch-text) !important;
-  background: transparent !important;
-  border-color: transparent !important;
+	color: var(--sanch-text) !important;
+	background: transparent !important;
+	border-color: transparent !important;
 }
 
 .workout-title-input:focus {
-  box-shadow: none !important;
-  border-color: transparent !important;
+	box-shadow: none !important;
+	border-color: transparent !important;
 }
 
 /* ---------- HISTORY ---------- */
 
 .workout-history-card {
-  transition:
-    transform 160ms ease,
-    border-color 160ms ease,
-    box-shadow 160ms ease;
+	transition:
+		transform 160ms ease,
+		border-color 160ms ease,
+		box-shadow 160ms ease;
 }
 
 .workout-history-card:hover {
-  transform: translateY(-2px);
-  border-color: #cbc8c1 !important;
-  box-shadow: 0 7px 22px rgba(32, 32, 31, 0.07) !important;
+	transform: translateY(-2px);
+	border-color: #cbc8c1 !important;
+	box-shadow: 0 7px 22px rgba(32, 32, 31, 0.07) !important;
 }
 
 .workout-history-card strong {
-  color: var(--sanch-text) !important;
+	color: var(--sanch-text) !important;
 }
 
 .workout-history-card span {
-  color: var(--sanch-text-soft) !important;
+	color: var(--sanch-text-soft) !important;
 }
 
 /* ---------- MOBILE / DESKTOP NAV ---------- */
@@ -2681,21 +2682,21 @@ textarea:focus {
 .bottom-nav,
 .mobile-nav,
 .desktop-nav {
-  background: rgba(250, 249, 246, 0.96) !important;
-  border-color: var(--sanch-border) !important;
-  box-shadow: 0 8px 28px rgba(32, 32, 31, 0.08) !important;
+	background: rgba(250, 249, 246, 0.96) !important;
+	border-color: var(--sanch-border) !important;
+	box-shadow: 0 8px 28px rgba(32, 32, 31, 0.08) !important;
 }
 
 .bottom-nav a,
 .mobile-nav a,
 .desktop-nav a {
-  color: var(--sanch-text-muted) !important;
+	color: var(--sanch-text-muted) !important;
 }
 
 .bottom-nav a:hover,
 .mobile-nav a:hover,
 .desktop-nav a:hover {
-  color: var(--sanch-text) !important;
+	color: var(--sanch-text) !important;
 }
 
 /* Selected navigation pill */
@@ -2705,28 +2706,28 @@ textarea:focus {
 .bottom-nav .active,
 .mobile-nav .active,
 .desktop-nav .active {
-  background: var(--sanch-black) !important;
-  color: #ffffff !important;
-  border-color: var(--sanch-black) !important;
-  box-shadow: none !important;
+	background: var(--sanch-black) !important;
+	color: #ffffff !important;
+	border-color: var(--sanch-black) !important;
+	box-shadow: none !important;
 }
 
 /* Keep animated Framer Motion pill charcoal */
 .nav-pill,
 .active-pill,
 .nav-indicator {
-  background: var(--sanch-black) !important;
+	background: var(--sanch-black) !important;
 }
 
 /* ---------- ACCENT ---------- */
 
 .accent,
 .accent-text {
-  color: var(--sanch-accent) !important;
+	color: var(--sanch-accent) !important;
 }
 
 .accent-bg {
-  background: var(--sanch-accent) !important;
+	background: var(--sanch-accent) !important;
 }
 
 /* ---------- REMOVE OLD COLORFUL GRADIENTS ---------- */
@@ -2735,35 +2736,35 @@ textarea:focus {
 .gradient-bg,
 .glass,
 .glass-card {
-  background-image: none !important;
+	background-image: none !important;
 }
 
 /* Keep surfaces extremely subtle instead of colorful */
 .glass,
 .glass-card {
-  background: var(--sanch-surface) !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
+	background: var(--sanch-surface) !important;
+	backdrop-filter: none !important;
+	-webkit-backdrop-filter: none !important;
 }
 
 /* ---------- SCROLLBAR ---------- */
 
 ::-webkit-scrollbar {
-  width: 7px;
-  height: 7px;
+	width: 7px;
+	height: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+	background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c9c6bf;
-  border-radius: 999px;
+	background: #c9c6bf;
+	border-radius: 999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #aaa69e;
+	background: #aaa69e;
 }
 
 /* =========================================================
@@ -2771,25 +2772,25 @@ textarea:focus {
    ========================================================= */
 
 @media (max-width: 768px) {
-  body {
-    background: var(--sanch-bg) !important;
-  }
+	body {
+		background: var(--sanch-bg) !important;
+	}
 
-  .workouts-page,
-  .active-workout-page {
-    background: var(--sanch-bg) !important;
-  }
+	.workouts-page,
+	.active-workout-page {
+		background: var(--sanch-bg) !important;
+	}
 
-  .workout-stat-card,
-  .empty-workout-card,
-  .exercise-card {
-    box-shadow: 0 3px 14px rgba(32, 32, 31, 0.04) !important;
-  }
+	.workout-stat-card,
+	.empty-workout-card,
+	.exercise-card {
+		box-shadow: 0 3px 14px rgba(32, 32, 31, 0.04) !important;
+	}
 
-  .bottom-nav,
-  .mobile-nav {
-    background: rgba(250, 249, 246, 0.97) !important;
-  }
+	.bottom-nav,
+	.mobile-nav {
+		background: rgba(250, 249, 246, 0.97) !important;
+	}
 }
 
 /* =========================================================
@@ -2798,10 +2799,10 @@ textarea:focus {
    ========================================================= */
 
 .dashboard-reference {
-  width: 100%;
-  max-width: 920px;
-  margin: 0 auto;
-  padding-bottom: 110px;
+	width: 100%;
+	max-width: 920px;
+	margin: 0 auto;
+	padding-bottom: 110px;
 }
 
 /* =========================================================
@@ -2809,34 +2810,34 @@ textarea:focus {
    ========================================================= */
 
 .dashboard-reference .dashboard-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 18px;
 }
 
 .dashboard-reference .dashboard-top h1 {
-  margin: 0;
-  font-size: 26px;
-  line-height: 1;
-  font-weight: 750;
-  letter-spacing: -0.04em;
+	margin: 0;
+	font-size: 26px;
+	line-height: 1;
+	font-weight: 750;
+	letter-spacing: -0.04em;
 }
 
 .dashboard-icon-button {
-  width: 34px;
-  height: 34px;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--sanch-border);
-  border-radius: 50%;
-  background: var(--sanch-surface);
-  color: var(--sanch-text);
-  cursor: pointer;
+	width: 34px;
+	height: 34px;
+	display: grid;
+	place-items: center;
+	border: 1px solid var(--sanch-border);
+	border-radius: 50%;
+	background: var(--sanch-surface);
+	color: var(--sanch-text);
+	cursor: pointer;
 }
 
 .dashboard-icon-button span {
-  font-size: 17px;
+	font-size: 17px;
 }
 
 /* =========================================================
@@ -2844,60 +2845,60 @@ textarea:focus {
    ========================================================= */
 
 .dashboard-calendar {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 24px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin-bottom: 24px;
 }
 
 .calendar-days {
-  flex: 1;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 5px;
+	flex: 1;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 5px;
 }
 
 .calendar-day {
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
 }
 
 .calendar-day span {
-  font-size: 8px;
-  line-height: 1;
-  color: var(--sanch-text-muted);
-  text-transform: uppercase;
+	font-size: 8px;
+	line-height: 1;
+	color: var(--sanch-text-muted);
+	text-transform: uppercase;
 }
 
 .calendar-day strong {
-  width: 31px;
-  height: 31px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: #e9e7e2;
-  color: var(--sanch-text);
-  font-size: 11px;
-  font-weight: 650;
+	width: 31px;
+	height: 31px;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	background: #e9e7e2;
+	color: var(--sanch-text);
+	font-size: 11px;
+	font-weight: 650;
 }
 
 .calendar-day.active strong {
-  background: var(--sanch-black);
-  color: #fff;
+	background: var(--sanch-black);
+	color: #fff;
 }
 
 .calendar-arrow {
-  width: 25px;
-  height: 30px;
-  display: grid;
-  place-items: center;
-  border: 0;
-  background: transparent;
-  color: var(--sanch-text-muted);
-  cursor: pointer;
+	width: 25px;
+	height: 30px;
+	display: grid;
+	place-items: center;
+	border: 0;
+	background: transparent;
+	color: var(--sanch-text-muted);
+	cursor: pointer;
 }
 
 /* =========================================================
@@ -2905,47 +2906,47 @@ textarea:focus {
    ========================================================= */
 
 .bodyweight-section {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 1.1fr);
-  gap: 24px;
-  padding: 2px 2px 25px;
-  border-bottom: 1px solid var(--sanch-border);
-  margin-bottom: 16px;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(260px, 1.1fr);
+	gap: 24px;
+	padding: 2px 2px 25px;
+	border-bottom: 1px solid var(--sanch-border);
+	margin-bottom: 16px;
 }
 
 .dashboard-label {
-  margin: 0 0 8px;
-  color: var(--sanch-text-muted);
-  font-size: 8px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
+	margin: 0 0 8px;
+	color: var(--sanch-text-muted);
+	font-size: 8px;
+	font-weight: 700;
+	letter-spacing: 0.16em;
 }
 
 .bodyweight-value {
-  display: flex;
-  align-items: baseline;
-  gap: 5px;
+	display: flex;
+	align-items: baseline;
+	gap: 5px;
 }
 
 .bodyweight-value strong {
-  font-size: 35px;
-  line-height: 1;
-  letter-spacing: -0.055em;
+	font-size: 35px;
+	line-height: 1;
+	letter-spacing: -0.055em;
 }
 
 .bodyweight-value span {
-  font-size: 12px;
-  color: var(--sanch-text-soft);
+	font-size: 12px;
+	color: var(--sanch-text-soft);
 }
 
 .bodyweight-change {
-  margin: 9px 0 0;
-  font-size: 10px;
-  color: var(--sanch-text-soft);
+	margin: 9px 0 0;
+	font-size: 10px;
+	color: var(--sanch-text-soft);
 }
 
 .bodyweight-change strong {
-  color: var(--sanch-accent);
+	color: var(--sanch-accent);
 }
 
 /* =========================================================
@@ -2953,114 +2954,504 @@ textarea:focus {
    ========================================================= */
 
 .weight-chart {
-  min-width: 0;
-  height: 92px;
-  display: grid;
-  grid-template-rows: 1fr 14px;
-  align-self: end;
+	min-width: 0;
+	height: 92px;
+
+	display: grid;
+	grid-template-rows: minmax(0, 1fr) 14px;
+	row-gap: 4px;
+
+	align-self: end;
 }
 
 .chart-bars {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  align-items: end;
-  gap: 8px;
-  min-height: 0;
+	min-height: 0;
+
+	display: grid;
+	grid-template-columns: repeat(7, minmax(0, 1fr));
+	gap: 8px;
+
+	align-items: end;
 }
 
 .chart-bar {
-  width: 8px;
-  min-height: 22px;
-  justify-self: center;
-  border-radius: 5px 5px 2px 2px;
-  background: #e5e2dc;
+	width: 8px;
+	min-height: 22px;
+
+	justify-self: center;
+
+	border-radius: 5px 5px 2px 2px;
+
+	background: #e5e2dc;
 }
 
 .chart-bar.current {
-  background: var(--sanch-accent);
+	background: var(--sanch-accent);
 }
 
 .chart-days {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  align-items: end;
-  text-align: center;
+	height: 14px;
+
+	display: grid;
+	grid-template-columns: repeat(7, minmax(0, 1fr));
+	gap: 8px;
+
+	align-items: start;
 }
 
 .chart-days span {
-  font-size: 7px;
-  line-height: 1;
-  color: var(--sanch-text-muted);
+	display: block;
+
+	width: 100%;
+	height: 14px;
+
+	font-size: 7px;
+	line-height: 14px;
+
+	color: var(--sanch-text-muted);
+
+	text-align: center;
+}
+
+/* =========================================================
+   WEIGHT TRACKING
+   ========================================================= */
+
+.weight-details-link {
+	display: inline-flex;
+	margin-top: 8px;
+
+	color: var(--sanch-text);
+	font-size: 8px;
+	font-weight: 650;
+
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.weight-details-link:hover {
+	opacity: 0.65;
+}
+
+.weight-page {
+	width: 100%;
+	max-width: 920px;
+	margin: 0 auto;
+	padding: 28px 0 80px;
+}
+
+.weight-page-header {
+	margin-bottom: 22px;
+}
+
+.weight-back-button {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+
+	margin-bottom: 18px;
+
+	color: var(--sanch-text-soft);
+
+	font-size: 10px;
+	font-weight: 600;
+
+	text-decoration: none;
+}
+
+.weight-page-header h1 {
+	margin: 4px 0 6px;
+
+	color: var(--sanch-text);
+
+	font-size: clamp(28px, 4vw, 40px);
+	line-height: 1;
+	letter-spacing: -0.04em;
+}
+
+.weight-page-header > div > p:last-child {
+	max-width: 480px;
+	margin: 0;
+
+	color: var(--sanch-text-soft);
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+/* =========================================================
+   SUMMARY
+   ========================================================= */
+
+.weight-summary-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+
+	margin-bottom: 12px;
+}
+
+.weight-summary-card {
+	padding: 16px;
+
+	border: 1px solid var(--sanch-border);
+	border-radius: 16px;
+
+	background: var(--sanch-surface);
+}
+
+.weight-summary-card span {
+	display: block;
+
+	margin-bottom: 7px;
+
+	color: var(--sanch-text-muted);
+
+	font-size: 8px;
+	font-weight: 650;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+}
+
+.weight-summary-card strong {
+	color: var(--sanch-text);
+
+	font-size: 20px;
+	letter-spacing: -0.03em;
+}
+
+/* =========================================================
+   CHART CARD
+   ========================================================= */
+
+.weight-chart-card {
+	padding: 18px;
+
+	border: 1px solid var(--sanch-border);
+	border-radius: 18px;
+
+	background: var(--sanch-surface);
+
+	margin-bottom: 12px;
+}
+
+.weight-chart-header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 16px;
+
+	margin-bottom: 18px;
+}
+
+.weight-chart-header h2,
+.weight-entry-card h2,
+.weight-history-card h2 {
+	margin: 3px 0 0;
+
+	color: var(--sanch-text);
+
+	font-size: 16px;
+	letter-spacing: -0.025em;
+}
+
+.weight-range-selector {
+	display: flex;
+	gap: 3px;
+
+	padding: 3px;
+
+	border: 1px solid var(--sanch-border);
+	border-radius: 999px;
+
+	background: #f5f3ef;
+}
+
+.weight-range-selector button {
+	border: 0;
+	border-radius: 999px;
+
+	padding: 6px 10px;
+
+	background: transparent;
+	color: var(--sanch-text-muted);
+
+	font-family: inherit;
+	font-size: 9px;
+	font-weight: 650;
+
+	cursor: pointer;
+}
+
+.weight-range-selector button.active {
+	background: var(--sanch-black);
+	color: #fff;
+}
+
+.weight-chart-large {
+	width: 100%;
+	overflow: hidden;
+}
+
+.weight-chart-large svg {
+	display: block;
+
+	width: 100%;
+	height: 260px;
+
+	overflow: visible;
+}
+
+.weight-chart-axis {
+	stroke: var(--sanch-border);
+	stroke-width: 1;
+}
+
+.weight-chart-line {
+	stroke: var(--sanch-accent);
+	stroke-width: 2.5;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.weight-chart-point {
+	fill: var(--sanch-accent);
+}
+
+.weight-chart-labels {
+	display: flex;
+	justify-content: space-between;
+
+	margin: 5px 32px 0;
+
+	color: var(--sanch-text-muted);
+
+	font-size: 8px;
+}
+
+.weight-detail-empty {
+	height: 260px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	text-align: center;
+}
+
+.weight-detail-empty p {
+	margin: 0 0 5px;
+
+	color: var(--sanch-text);
+
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.weight-detail-empty span {
+	color: var(--sanch-text-muted);
+	font-size: 10px;
+}
+
+/* =========================================================
+   ADD MEASUREMENT
+   ========================================================= */
+
+.weight-entry-card,
+.weight-history-card {
+	padding: 18px;
+
+	border: 1px solid var(--sanch-border);
+	border-radius: 18px;
+
+	background: var(--sanch-surface);
+
+	margin-bottom: 12px;
+}
+
+.weight-entry-form {
+	display: grid;
+	grid-template-columns: 1fr 1fr auto;
+	align-items: end;
+	gap: 10px;
+
+	margin-top: 16px;
+}
+
+.weight-entry-form label {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+
+	color: var(--sanch-text-muted);
+
+	font-size: 9px;
+	font-weight: 650;
+}
+
+.weight-entry-form input {
+	width: 100%;
+	height: 38px;
+
+	padding: 0 11px;
+
+	border: 1px solid var(--sanch-border);
+	border-radius: 10px;
+
+	background: #faf9f6;
+	color: var(--sanch-text);
+
+	font-family: inherit;
+	font-size: 11px;
+	outline: none;
+}
+
+.weight-entry-form input:focus {
+	border-color: #aaa79f;
+}
+
+.weight-entry-form .dashboard-black-button {
+	height: 38px;
+}
+
+/* =========================================================
+   HISTORY
+   ========================================================= */
+
+.weight-history-header {
+	margin-bottom: 10px;
+}
+
+.weight-history-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.weight-history-row {
+	display: grid;
+	grid-template-columns: 1fr auto 32px;
+	align-items: center;
+	gap: 10px;
+
+	min-height: 42px;
+
+	border-top: 1px solid var(--sanch-border);
+
+	color: var(--sanch-text-soft);
+
+	font-size: 10px;
+}
+
+.weight-history-row strong {
+	color: var(--sanch-text);
+	font-size: 11px;
+}
+
+.weight-delete-button {
+	width: 28px;
+	height: 28px;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	border: 0;
+	border-radius: 50%;
+
+	background: transparent;
+	color: var(--sanch-text-muted);
+
+	cursor: pointer;
+}
+
+.weight-delete-button:hover {
+	color: #b84b3f;
+	background: #f5efed;
 }
 
 /* =========================================================
    NUTRITION
+   Pinterest-style compact nutrition section
    ========================================================= */
 
 .nutrition-grid {
-  display: grid;
-  grid-template-columns: minmax(170px, 0.8fr) minmax(0, 1.2fr);
-  gap: 8px;
-  margin-bottom: 8px;
+	display: grid;
+	grid-template-columns: minmax(145px, 0.82fr) minmax(0, 1.18fr);
+	gap: 8px;
+	margin-bottom: 10px;
 }
 
 .nutrition-card {
-  min-height: 180px;
-  padding: 16px;
-  border: 1px solid var(--sanch-border);
-  border-radius: 16px;
-  background: var(--sanch-surface);
+	min-width: 0;
+	min-height: 160px;
+	padding: 14px;
+	border: 1px solid var(--sanch-border);
+	border-radius: 16px;
+	background: var(--sanch-surface);
+	box-shadow: none;
 }
 
+/* =========================================================
+   CALORIES
+   ========================================================= */
+
 .calories-card {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .calorie-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .calorie-ring {
-  width: 70px;
-  height: 70px;
-  display: grid;
-  place-items: center;
-  border: 9px solid #e4e2de;
-  border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	display: grid;
+	place-items: center;
+
+	border: 9px solid #e3e1dd;
+	border-radius: 50%;
+
+	background: transparent;
 }
 
 .calorie-ring div {
-  display: grid;
-  place-items: center;
+	display: grid;
+	place-items: center;
 }
 
 .calorie-ring strong {
-  font-size: 13px;
+	color: var(--sanch-text);
+	font-size: 13px;
+	font-weight: 650;
+	letter-spacing: -0.02em;
 }
 
 .calorie-total {
-  margin: 12px 0 0;
-  color: var(--sanch-accent);
-  font-size: 12px;
+	margin: 12px 0 0;
+	color: var(--sanch-accent);
+	font-size: 12px;
+	line-height: 1;
 }
 
 .calorie-total strong {
-  font-weight: 700;
+	color: var(--sanch-accent);
+	font-weight: 700;
 }
 
 .calorie-total span {
-  color: var(--sanch-text-soft);
+	color: var(--sanch-text-soft);
 }
 
 .calorie-unit {
-  margin-top: 1px;
-  color: var(--sanch-text-soft);
-  font-size: 9px;
+	margin-top: 4px;
+	color: var(--sanch-text-soft);
+	font-size: 9px;
 }
 
 /* =========================================================
@@ -3068,106 +3459,159 @@ textarea:focus {
    ========================================================= */
 
 .macro-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
 .macro-row {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	min-width: 0;
 }
 
 .macro-row > div:first-child {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
 }
 
 .macro-row span {
-  color: var(--sanch-text-muted);
-  font-size: 8px;
-  letter-spacing: 0.1em;
+	color: var(--sanch-text-muted);
+	font-size: 8px;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
 }
 
 .macro-row strong {
-  color: var(--sanch-text-soft);
-  font-size: 9px;
-  font-weight: 500;
+	flex-shrink: 0;
+	color: var(--sanch-text-soft);
+	font-size: 8px;
+	font-weight: 500;
 }
 
 .macro-line {
-  height: 1px;
-  width: 100%;
-  background: var(--sanch-border);
+	width: 100%;
+	height: 1px;
+	overflow: hidden;
+	background: var(--sanch-border);
 }
 
 .macro-line span {
-  display: block;
-  width: 0;
-  height: 1px;
-  background: var(--sanch-accent);
+	display: block;
+	width: 0;
+	height: 1px;
+	background: var(--sanch-accent);
 }
 
 /* =========================================================
    ACTION CARDS
+   Pinterest-style Workouts / Meals cards
    ========================================================= */
 
 .dashboard-actions {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
-  margin-bottom: 12px;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 8px;
+	margin-bottom: 12px;
 }
 
 .dashboard-action-card {
-  min-height: 130px;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid var(--sanch-border);
-  border-radius: 16px;
-  background: var(--sanch-surface);
+	min-width: 0;
+	min-height: 120px;
+
+	padding: 14px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	border: 1px solid var(--sanch-border);
+	border-radius: 16px;
+
+	background: var(--sanch-surface);
+
+	box-shadow: none;
+
+	transition:
+		transform 160ms ease,
+		border-color 160ms ease;
+}
+
+.dashboard-action-card:hover {
+	transform: translateY(-1px);
+	border-color: #cbc8c1;
 }
 
 .dashboard-action-card h2 {
-  margin: 0 0 3px;
-  font-size: 14px;
-  letter-spacing: -0.025em;
+	margin: 0 0 3px;
+
+	color: var(--sanch-text);
+
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.1;
+
+	letter-spacing: -0.025em;
 }
 
 .dashboard-action-card p {
-  margin: 0;
-  font-size: 9px;
-  color: var(--sanch-text-soft);
+	margin: 0;
+
+	color: var(--sanch-text-soft);
+
+	font-size: 9px;
+	line-height: 1.3;
 }
 
+/* =========================================================
+   BLACK ACTION BUTTON
+   ========================================================= */
+
 .dashboard-black-button {
-  width: fit-content;
-  min-width: 76px;
-  height: 32px;
-  padding: 0 14px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  border: 0;
-  border-radius: 999px;
-  background: var(--sanch-black);
-  color: #fff;
-  font-size: 10px;
-  font-weight: 650;
-  cursor: pointer;
-  transition:
-    background 160ms ease,
-    transform 160ms ease;
+	width: fit-content;
+	min-width: 76px;
+	height: 32px;
+
+	padding: 0 13px;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+
+	border: 0;
+	border-radius: 999px;
+
+	background: var(--sanch-black);
+	color: #ffffff;
+
+	font-size: 10px;
+	font-weight: 650;
+
+	cursor: pointer;
+
+	transition:
+		background 160ms ease,
+		transform 160ms ease;
 }
 
 .dashboard-black-button:hover {
-  background: var(--sanch-black-hover);
-  transform: translateY(-1px);
+	background: var(--sanch-black-hover);
+	transform: translateY(-1px);
+}
+
+.dashboard-black-button:active {
+	transform: translateY(0);
+}
+
+.dashboard-black-button svg {
+	width: 13px;
+	height: 13px;
+	stroke-width: 1.8;
 }
 
 /* =========================================================
@@ -3175,43 +3619,43 @@ textarea:focus {
    ========================================================= */
 
 .dashboard-mini-summary {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr) auto;
-  gap: 8px;
-  padding-top: 2px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr) auto;
+	gap: 8px;
+	padding-top: 2px;
 }
 
 .dashboard-mini-summary > div {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  min-width: 0;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	min-width: 0;
 }
 
 .dashboard-mini-summary svg {
-  color: var(--sanch-text-muted);
-  flex-shrink: 0;
+	color: var(--sanch-text-muted);
+	flex-shrink: 0;
 }
 
 .dashboard-mini-summary span {
-  font-size: 8px;
-  color: var(--sanch-text-muted);
+	font-size: 8px;
+	color: var(--sanch-text-muted);
 }
 
 .dashboard-mini-summary strong {
-  font-size: 9px;
-  color: var(--sanch-text);
+	font-size: 9px;
+	color: var(--sanch-text);
 }
 
 .dashboard-settings-button {
-  width: 32px;
-  height: 32px;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--sanch-border);
-  border-radius: 50%;
-  background: var(--sanch-surface);
-  color: var(--sanch-text);
+	width: 32px;
+	height: 32px;
+	display: grid;
+	place-items: center;
+	border: 1px solid var(--sanch-border);
+	border-radius: 50%;
+	background: var(--sanch-surface);
+	color: var(--sanch-text);
 }
 
 /* =========================================================
@@ -3219,68 +3663,394 @@ textarea:focus {
    ========================================================= */
 
 @media (max-width: 700px) {
-  .dashboard-reference {
-    padding: 2px 18px 105px;
-  }
+	.dashboard-reference {
+		padding: 2px 18px 105px;
+	}
 
-  .dashboard-reference .dashboard-top h1 {
-    font-size: 24px;
-  }
+	.dashboard-reference .dashboard-top h1 {
+		font-size: 24px;
+	}
 
-  .bodyweight-section {
-    grid-template-columns: minmax(105px, 0.82fr) minmax(175px, 1.18fr);
-    align-items: end;
-    gap: 12px;
-  }
+	.bodyweight-section {
+		grid-template-columns: minmax(105px, 0.82fr) minmax(175px, 1.18fr);
+		align-items: end;
+		gap: 12px;
+	}
 
-  .weight-chart {
-    height: 82px;
-    min-height: 0;
-  }
+	.weight-chart {
+		height: 82px;
+		min-height: 0;
+	}
 
-  .nutrition-grid {
-    grid-template-columns: 0.85fr 1.15fr;
-  }
+	.nutrition-grid {
+		grid-template-columns: 0.85fr 1.15fr;
+		gap: 8px;
+	}
 
-  .nutrition-card {
-    min-height: 170px;
-    padding: 13px;
-  }
+	.nutrition-card {
+		min-height: 160px;
+		padding: 13px;
+		border-radius: 15px;
+	}
 
-  .dashboard-action-card {
-    min-height: 120px;
-    padding: 14px;
-  }
+	.calorie-ring {
+		width: 66px;
+		height: 66px;
+		border-width: 8px;
+	}
 
-  .dashboard-mini-summary {
-    grid-template-columns: repeat(3, 1fr);
-  }
+	.calorie-total {
+		margin-top: 10px;
+		font-size: 11px;
+	}
 
-  .dashboard-settings-button {
-    display: none;
-  }
+	.macro-card {
+		padding-top: 13px;
+		padding-bottom: 13px;
+	}
+
+	.macro-row {
+		gap: 5px;
+	}
+
+	.macro-row span {
+		font-size: 7px;
+	}
+
+	.macro-row strong {
+		font-size: 8px;
+	}
+
+	.dashboard-actions {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 8px;
+		margin-bottom: 12px;
+	}
+
+	.dashboard-action-card {
+		min-height: 120px;
+		padding: 14px;
+		border-radius: 16px;
+	}
+
+	.dashboard-action-card h2 {
+		font-size: 13px;
+	}
+
+	.dashboard-action-card p {
+		font-size: 8px;
+	}
+
+	.dashboard-black-button {
+		min-width: 76px;
+		height: 32px;
+		padding: 0 13px;
+		font-size: 10px;
+	}
+	/* =========================================================
+   MOBILE BODYWEIGHT CHART FIX
+   Keeps weekday labels BELOW the bars
+   ========================================================= */
+
+.weight-chart {
+	height: 108px;
+	min-height: 108px;
+
+	display: grid;
+	grid-template-rows: minmax(0, 1fr) 16px;
+	row-gap: 6px;
+
+	align-self: end;
+}
+
+.chart-bars {
+	width: 100%;
+	height: 100%;
+	min-height: 0;
+
+	display: grid;
+	grid-template-columns: repeat(7, minmax(0, 1fr));
+	gap: 8px;
+
+	align-items: end;
+}
+
+.chart-bar {
+	width: 7px;
+	min-height: 18px;
+
+	justify-self: center;
+	align-self: end;
+}
+
+.chart-days {
+	width: 100%;
+	height: 16px;
+	min-height: 16px;
+
+	display: grid;
+	grid-template-columns: repeat(7, minmax(0, 1fr));
+	gap: 8px;
+
+	align-items: start;
+}
+
+.chart-days span {
+	width: 100%;
+	height: 16px;
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+
+	font-size: 7px;
+	line-height: 8px;
+
+	text-align: center;
+}
+
+.weight-page {
+	padding: 20px 0 90px;
+}
+
+.weight-summary-grid {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.weight-summary-card:last-child {
+	grid-column: 1 / -1;
+}
+
+.weight-chart-header {
+	flex-direction: column;
+	gap: 12px;
+}
+
+.weight-range-selector {
+	width: 100%;
+	justify-content: space-between;
+}
+
+.weight-range-selector button {
+	flex: 1;
+	padding: 7px 6px;
+}
+
+.weight-chart-large svg {
+	height: 210px;
+}
+
+.weight-chart-labels {
+	margin-left: 16px;
+	margin-right: 16px;
+	font-size: 7px;
+}
+
+.weight-entry-form {
+	grid-template-columns: 1fr 1fr;
+}
+
+.weight-entry-form .dashboard-black-button {
+	grid-column: 1 / -1;
+	width: 100%;
+}
 }
 
 @media (max-width: 390px) {
-  .dashboard-reference {
-    padding-left: 14px;
-    padding-right: 14px;
-  }
+	.dashboard-reference {
+		padding-left: 14px;
+		padding-right: 14px;
+	}
 
-  .calendar-day strong {
-    width: 29px;
-    height: 29px;
-  }
+	.calendar-day strong {
+		width: 29px;
+		height: 29px;
+	}
 
-  .nutrition-card {
-    min-height: 160px;
-  }
+	.nutrition-card {
+		min-height: 156px;
+		padding: 12px;
+	}
 
-  .macro-row strong {
-    font-size: 8px;
-  }
+	.calorie-ring {
+		width: 62px;
+		height: 62px;
+		border-width: 8px;
+	}
 
-  .dashboard-action-card h2 {
-    font-size: 13px;
-  }
+	.calorie-ring strong {
+		font-size: 12px;
+	}
+
+	.calorie-total {
+		font-size: 10px;
+	}
+
+	.macro-row span {
+		font-size: 6.5px;
+	}
+
+	.macro-row strong {
+		font-size: 7.5px;
+	}
+
+	.dashboard-action-card {
+		min-height: 118px;
+		padding: 13px;
+	}
+
+	.dashboard-action-card h2 {
+		font-size: 13px;
+	}
+
+	.dashboard-action-card p {
+		font-size: 8px;
+	}
+
+	.dashboard-black-button {
+		height: 31px;
+		min-width: 74px;
+		padding: 0 12px;
+	}
+
+	.weight-chart {
+	height: 104px;
+	min-height: 104px;
+
+	grid-template-rows: minmax(0, 1fr) 16px;
+	row-gap: 5px;
+}
+
+.chart-bars,
+.chart-days {
+	gap: 6px;
+}
+
+.chart-bar {
+	width: 7px;
+	min-height: 17px;
+}
+
+@media (max-width: 390px) {
+	.weight-summary-card {
+		padding: 13px;
+	}
+
+	.weight-summary-card strong {
+		font-size: 17px;
+	}
+
+	.weight-chart-card,
+	.weight-entry-card,
+	.weight-history-card {
+		padding: 14px;
+	}
+
+	.weight-chart-large svg {
+		height: 190px;
+	}
+
+	.weight-range-selector button {
+		font-size: 8px;
+		padding: 6px 4px;
+	}
+}
+}
+
+/* =========================================================
+   SANCHFIT — TABLET / IPAD LAYOUT
+   Adds comfortable horizontal breathing room without
+   changing the phone or desktop layouts.
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1099px) {
+	/* Main content area */
+	.app-content {
+		min-width: 0;
+		padding-left: 28px;
+		padding-right: 28px;
+	}
+
+	/* Reference dashboard */
+	.dashboard-reference {
+		width: 100%;
+		max-width: 920px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* Workout tracker */
+	.workouts-page {
+		width: 100%;
+		max-width: 1180px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	/* Other page content */
+	.placeholder-page {
+		width: 100%;
+		max-width: 1120px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* Keep dashboard sections inside the new width */
+	.dashboard-reference .bodyweight-section,
+	.dashboard-reference .nutrition-grid,
+	.dashboard-reference .quick-actions-grid {
+		width: 100%;
+	}
+}
+
+/* =========================================================
+   WEIGHT TRACKING — MOBILE EDGE SPACING
+   Final mobile override
+========================================================= */
+
+@media (max-width: 700px) {
+	.weight-page {
+		width: calc(100% - 28px);
+		max-width: none;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 20px 0 100px;
+		box-sizing: border-box;
+	}
+
+	.weight-page > * {
+		width: 100%;
+		max-width: 100%;
+		box-sizing: border-box;
+	}
+
+	.weight-page-header {
+		width: 100%;
+	}
+
+	.weight-summary-grid {
+		width: 100%;
+	}
+
+	.weight-chart-card {
+		width: 100%;
+	}
+
+	.weight-entry-card {
+		width: 100%;
+	}
+
+	.weight-history-card {
+		width: 100%;
+	}
+}
+
+@media (max-width: 390px) {
+	.weight-page {
+		width: calc(100% - 28px);
+		padding-top: 18px;
+		padding-bottom: 100px;
+	}
 }
